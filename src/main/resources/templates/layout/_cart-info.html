@@ -1,0 +1,10 @@
+<div xmlns:th="http://www.thymeleaf.org">
+  <a th:href="@{/cart/view}" style="text-decoration: none;">
+    <div class="panel panel-primary">
+      <div class="panel-body text-center" style="font-size: 17px">
+        <i class="bi bi-cart3 pe-4" style="color: rgb(177, 177, 22); font-size: 30px"></i>
+        {{cart.count}} items x {{cart.amount | number:2}} $
+      </div>
+    </div>
+  </a>
+</div>
